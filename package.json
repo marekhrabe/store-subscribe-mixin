@@ -1,0 +1,22 @@
+{
+  "name": "store-subscribe-mixin",
+  "keywords": ["react", "flux", "store"],
+  "version": "1.0.0",
+  "description": "Abstracts subscribing and updating React component state from Stores",
+  "main": "lib/main.js",
+  "scripts": {
+    "prepublish": "./node_modules/.bin/coffee -o lib/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marekhrabe/store-subscribe-mixin"
+  },
+  "bugs": {
+    "url": "https://github.com/marekhrabe/store-subscribe-mixin/issues"
+  },
+  "author": "Marek Hrabe <marekhrabe@abdoc.net> (https://github.com/marekhrabe)",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.7.1"
+  }
+}
