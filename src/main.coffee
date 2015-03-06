@@ -13,9 +13,11 @@ module.exports = (stores, getStateFromStores) ->
   mixin = {
     componentDidMount: ->
       store.addChangeListener(onChange.bind(this)) for store in stores
+      return null
 
     componentWillUnmount: ->
       store.removeChangeListener(onChange.bind(this)) for store in stores
+      return null
   }
 
   if typeof getStateFromStores is 'function'
