@@ -1,7 +1,11 @@
 {
   "name": "store-subscribe-mixin",
-  "keywords": ["react", "flux", "store"],
-  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "flux",
+    "store"
+  ],
+  "version": "1.0.1",
   "description": "Abstracts subscribing and updating React component state from Stores",
   "main": "lib/main.js",
   "scripts": {
