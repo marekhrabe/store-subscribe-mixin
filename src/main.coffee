@@ -4,7 +4,7 @@ module.exports = (stores, getStateFromStores) ->
 
   onChange = ->
     if typeof getStateFromStores is 'function'
-      @setState(getStateFromStores())
+      @setState(getStateFromStores()) if @isMounted()
     else if typeof @storesDidUpdate is 'function'
       @storesDidUpdate()
     else
