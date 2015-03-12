@@ -6,7 +6,7 @@ module.exports = (stores, getStateFromStores) ->
     if typeof getStateFromStores is 'function'
       @setState(getStateFromStores()) if @isMounted()
     else if typeof @storesDidUpdate is 'function'
-      @storesDidUpdate()
+      @storesDidUpdate() if @isMounted()
     else
       throw new Error('You need to implement `storesDidUpdate` method on component or pass getStateFromStores function as a second argument of StoreSubscribeMixin')
 
