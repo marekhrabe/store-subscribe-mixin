@@ -27,4 +27,4 @@ module.exports = (stores, getStateFromStores) ->
   return mixin
 
 module.exports.componentDidMount = ->
-  console.error 'StoreSubscribeMixin needs to be called with an array of Stores. Like this: `Ract.createClass({ mixins: StoreSubscribeMixin([Store1, Store2]) })`'
+  console.error 'StoreSubscribeMixin needs to be called with an array of Stores. Like this: `React.createClass({ mixins: StoreSubscribeMixin([Store1, Store2]) })`'
