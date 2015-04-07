@@ -5,7 +5,7 @@
     "flux",
     "store"
   ],
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Abstracts subscribing and updating React component state from Stores",
   "main": "lib/main.js",
   "scripts": {
