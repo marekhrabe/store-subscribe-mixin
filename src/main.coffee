@@ -8,7 +8,7 @@ module.exports = (stores, getStateFromStores) ->
     else if typeof @storesDidUpdate is 'function'
       @storesDidUpdate() if @isMounted()
     else
-      throw new Error('You need to implement `storesDidUpdate` method on component or pass getStateFromStores function as a second argument of StoreSubscribeMixin')
+      throw new Error 'You need to implement `storesDidUpdate` method on component or pass getStateFromStores function as a second argument of StoreSubscribeMixin'
 
   mixin = {
     componentDidMount: ->
